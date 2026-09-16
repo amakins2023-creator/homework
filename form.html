@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Donation Form</title>
+</head>
+<body>
+    <header>
+        <h1>Book Donation Form</h1>
+        <p>Fill in the form below to donate your very own book to the Charity (Please make sure it is not from a library because then we won't accept it, so we kindly ask that you give your own purchased book.)</p>
+        <nav>
+            <a href="#donor-details">Donor's Details</a> | 
+            <a href="#book-details">Book Details</a> | 
+            <a href="#dropoff-days">Chosen Drop-off Days</a>
+        </nav>
+    </header>
+    <hr>
+    
+    <form>
+        <!-- Donor's Details Section -->
+        <section id="donor-details">
+            <fieldset>
+                <legend>Donor's Details</legend>
+                <p>
+                    <label for="name">Your Name</label><br>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </p>
+                <p>
+                    <label for="pid">Government / Patient ID</label><br>
+                    
+                    <input type="password" id="pid" placeholder="Enter Government ID">
+                </p>
+                <p>
+                    <label for="donation-date">Donation Date</label><br>
+                    <input type="date" id="donation-date">
+                </p>
+            </fieldset>
+        </section>
+        
+        <br>
+
+        
+        <section id="book-details">
+            <fieldset>
+                <legend>Book Details</legend>
+                <p>
+                    <label for="category">Choose your book Category</label><br>
+                    <select id="category">
+                        <option value="">-- Select a category --</option>
+                        <option value="fiction">Fiction</option>
+                        <option value="science">Science</option>
+                        <option value="history">History</option>
+                        <option value="biography">Biography</option>
+                        <option value="autobiography">Autobiography</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="graphicnovel">Graphic-Novel</option>
+                        <option value="encyclopedia">Encyclopedia</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Book Condition</label><br>
+                    <input type="radio" id="cond-new" name="condition" value="new">
+                    <label for="cond-new">Newly Bought/Like new</label><br>
+                    
+                    <input type="radio" id="cond-good" name="condition" value="good">
+                    <label for="cond-good">Good/Not quite new</label><br>
+                    
+                    <input type="radio" id="cond-used" name="condition" value="used">
+                    <label for="cond-used">Used/Manageable</label><br>
+                    
+                    <input type="radio" id="cond-broken" name="condition" value="broken">
+                    <label for="cond-broken">Broken/Fixable</label>
+                </p>
+                <p>
+                    <label for="notes">Book Title or Additional Notes</label><br>
+                    <textarea name="Notes" id="notes" rows="10" cols="35" placeholder="e.g. The Book Title, author's name, or any notes."></textarea>
+                </p>
+            </fieldset>
+        </section>
+        
+        <br>
+
+        
+        <section id="dropoff-days">
+            <fieldset>
+                <legend>Chosen Drop-Off Day</legend>
+                <p>
+                    <input type="checkbox" id="mon" name="dropoff" value="mon">
+                    <label for="mon">Monday</label><br>
+                    
+                    <input type="checkbox" id="tue" name="dropoff" value="tue">
+                    <label for="tue">Tuesday</label><br>
+
+                    <input type="checkbox" id="wed" name="dropoff" value="wed">
+                    <label for="wed">Wednesday</label><br>
+
+                    <input type="checkbox" id="thurs" name="dropoff" value="thurs">
+                    <label for="thurs">Thursday</label><br>
+
+                    <input type="checkbox" id="fri" name="dropoff" value="fri">
+                    <label for="Fri">Friday</label><br>
+
+                    <input type="checkbox" id="sat" name="dropoff" value="sat">
+                    <label for="sat">Saturday</label><br>
+
+                    <input type="checkbox" id="sun" name="dropoff" value="sun">
+                    <label for="sun">Sunday</label><br>
+                </p>
+            </fieldset>
+        </section>
+        
+        
+        <br>
+        <button type="submit" style="color: green;">Submit Donation</button>
+    </form>
+</body>
+</html>
